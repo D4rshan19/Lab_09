@@ -54,6 +54,17 @@ public class Main {
             }
         }
         System.out.println("You entered " + userInput + " and it was displayed " + counter + " times throughout the array");
+        scan.nextLine();
+    }
+
+    //Asking user for input
+    int userInput = InputHelper.getRangedInt(scan, "Enter a value between 1 - 100" ,1, 100);
+
+    //Making for loop to see if user input is within array, and which position
+    for (int i = 0; i < dataPoints.length; i++) {
+        if (dataPoints[i] == userInput) {
+            System.out.println("You entered " + userInput + " and it was displayed on " + [i] );
+        }
     }
 }
 
